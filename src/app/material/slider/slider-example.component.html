@@ -1,0 +1,25 @@
+<section class="example-section">
+  <mat-checkbox [(ngModel)]="thumbLabel">Show thumb label</mat-checkbox>
+  <mat-checkbox [(ngModel)]="disabled">Disabled</mat-checkbox>
+</section>
+
+<section class="example-section">
+  <div class="example-label-container">
+    <label id="example-name-label" class="example-name-label">Value</label>
+    <label class="example-value-label">{{ value }}</label>
+  </div>
+</section>
+
+<section class="example-section">
+  <mat-slider
+    class="example-margin"
+    [disabled]="disabled"
+    [max]="max"
+    [min]="min"
+    [step]="step"
+    [discrete]="thumbLabel"
+    [showTickMarks]="showTicks"
+  >
+    <input matSliderThumb [(ngModel)]="value" />
+  </mat-slider>
+</section>

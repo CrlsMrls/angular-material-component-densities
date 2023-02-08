@@ -1,18 +1,26 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DensityIntroComponent } from './intro.component';
+
+import { MaterialModule } from './material.module';
+
+import { MaterialListComponent } from './material/list.component';
+import { TreeNestedOverviewExample } from './material/tree/tree-nested-overview-example';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent, DensityIntroComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    MaterialListComponent,
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    MaterialModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

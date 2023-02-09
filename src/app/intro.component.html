@@ -1,16 +1,7 @@
 <section>
   <p>
-    This Angular application imports multiple
-    <a href="https://material.angular.io/"> Angular Material components</a>
-    and applies material theming density.
-  </p>
-  <p>Each tab applies a different density value.</p>
-</section>
-
-<section>
-  <p>
-    With the <em>"@angular/material"</em> version <em>"15.1.3"</em>, all density
-    values smaller than "<em>-2</em>"", the compiler throws the following error:
+    Currently (<em>@angular/material v15.1.3</em>), the compiler throws the
+    following error for all density values smaller than "<em>-2</em>":
   </p>
   <pre>
       Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
@@ -29,4 +20,17 @@
         node_modules/@angular/material/core/density/private/_all-density.scss 59:3  all-component-densities()
         src/styles.scss 41:3   
   </pre>
+  <p>
+    This should be possible based on
+    <a
+      href="https://m3.material.io/foundations/layout/understanding-layout/spacing#da94f612-f274-49ab-aec5-f03dab53be8e"
+    >
+      Material documentation about Density scale:</a
+    >
+    <em
+      >"The density scale is numbered, starting at 0 for a component’s default
+      density. The scale moves to negative numbers
+      <strong>(-1, -2, -3)</strong> as space decreases,..."</em
+    >
+  </p>
 </section>

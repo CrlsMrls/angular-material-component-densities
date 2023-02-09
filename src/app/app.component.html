@@ -9,7 +9,14 @@
     mat-align-tabs="start"
   >
     <mat-tab label="Introduction">
-      <density-intro></density-intro>
+      <section>
+        <p>
+          This Angular application shows how the density theming configuration
+          affects the
+          <a href="https://material.angular.io/">Angular Material components</a
+          >.
+        </p>
+      </section>
     </mat-tab>
 
     <mat-tab label="Density 0">
@@ -20,6 +27,9 @@
     </mat-tab>
     <mat-tab label="Density -2">
       <div class="density-2-section"><material-list></material-list></div>
+    </mat-tab>
+    <mat-tab label="Density -3">
+      <div class="density-2-section"><density-intro></density-intro></div>
     </mat-tab>
   </mat-tab-group>
 </article>

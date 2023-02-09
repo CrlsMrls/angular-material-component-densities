@@ -17,6 +17,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { BadgeExampleComponent } from './badge/badge-example.component';
 import { SliderExampleComponent } from './slider/slider-example.component';
 import { CommonModule } from '@angular/common';
+import { ChipsInputExampleComponent } from './chips-input/chips-input-example.component';
 
 @Component({
   selector: 'material-list',
@@ -28,6 +29,7 @@ import { CommonModule } from '@angular/common';
     TreeNestedOverviewExample,
     ListExampleComponent,
     ChipsExampleComponent,
+    ChipsInputExampleComponent,
     StepperExampleComponent,
     ExpansionPanelExampleComponent,
     DatepickerExampleComponent,

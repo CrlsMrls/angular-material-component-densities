@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { DensityIntroComponent } from './intro.component';
-
 import { MaterialModule } from './material.module';
 
 import { MaterialListComponent } from './material/list.component';
-import { TreeNestedOverviewExample } from './material/tree/tree-nested-overview-example';
 
 @NgModule({
   declarations: [AppComponent, DensityIntroComponent],
@@ -18,6 +18,8 @@ import { TreeNestedOverviewExample } from './material/tree/tree-nested-overview-
     MaterialListComponent,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    MatTabsModule,
+    MatToolbarModule,
     MaterialModule,
   ],
   providers: [],

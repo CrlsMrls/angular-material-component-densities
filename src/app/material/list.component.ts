@@ -18,6 +18,7 @@ import { BadgeExampleComponent } from './badge/badge-example.component';
 import { SliderExampleComponent } from './slider/slider-example.component';
 import { CommonModule } from '@angular/common';
 import { ChipsInputExampleComponent } from './chips-input/chips-input-example.component';
+import { TableExampleComponent } from './table/table-example.component';
 
 @Component({
   selector: 'material-list',
@@ -38,6 +39,7 @@ import { ChipsInputExampleComponent } from './chips-input/chips-input-example.co
     SlideToggleExampleComponent,
     BadgeExampleComponent,
     SliderExampleComponent,
+    TableExampleComponent,
     /// material components
     MatCardModule,
     MatDividerModule,

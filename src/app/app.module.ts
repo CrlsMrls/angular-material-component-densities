@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { DensityIntroComponent } from './intro.component';
-import { MaterialModule } from './material.module';
 
 import { MaterialListComponent } from './material/list.component';
 
@@ -20,7 +19,6 @@ import { MaterialListComponent } from './material/list.component';
     ReactiveFormsModule,
     MatTabsModule,
     MatToolbarModule,
-    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

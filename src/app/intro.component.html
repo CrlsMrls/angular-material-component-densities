@@ -1,5 +1,18 @@
 <section>
   <p>
+    This Angular application shows how the density theming configuration affects
+    the
+    <a href="https://material.angular.io/">Angular Material components</a>.
+  </p>
+</section>
+<section>
+  <h2>Problem #1 -3 global density crashes compilation</h2>
+  <p>
+    <a href="https://github.com/angular/components/issues/26613"
+      >GitHub issue 26613</a
+    >
+  </p>
+  <p>
     Currently (<em>@angular/material v15.1.5</em>), the compiler throws the
     following error when setting density globally "<em
       >@include mat.all-component-densities(-3);</em
@@ -10,17 +23,6 @@
       SassError: "mdc-density: height must be between 24px and 32px (inclusive), but received 20px."
       ╷
       632 │     $height: density.prop-value(
-        │ ┌────────────^
-        633 │ │     $density-config: $density-config,
-        634 │ │     $density-scale: $density-scale,
-        635 │ │     $property-name: height,
-        636 │ │   );
-        │ └───^
-        ╵
-        @material/chips/_chip-theme.scss 632:12                                     density()
-        node_modules/@angular/material/chips/_chips-theme.scss 97:5                 density()
-        node_modules/@angular/material/core/density/private/_all-density.scss 59:3  all-component-densities()
-        src/styles.scss 41:3   
   </pre>
   <p>
     This should be possible based on
@@ -34,5 +36,19 @@
       density. The scale moves to negative numbers
       <strong>(-1, -2, -3)</strong> as space decreases,..."</em
     >
+  </p>
+  <p>The <em>mat-chips</em> implementation produces this error.</p>
+</section>
+<section>
+  <h2>Problem #2 mat-label disappears when density < -1</h2>
+  <p>
+    <a href="https://github.com/angular/components/issues/26579"
+      >GitHub issue 26579</a
+    >
+  </p>
+  <p>
+    The <em>mat-label</em> disappears when the density of
+    <em>mat-form-field</em> with <em>appearance="fill"</em> is set to lower than
+    -1.
   </p>
 </section>

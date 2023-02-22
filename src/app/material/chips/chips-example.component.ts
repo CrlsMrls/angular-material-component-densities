@@ -4,6 +4,7 @@ import { MatChipsModule } from '@angular/material/chips';
 @Component({
   selector: 'chips-example',
   template: `
+    <p>Note. density -3 is not applied for the <em>mat-chip</em> component</p>
     <mat-chip-listbox aria-label="Dog selection">
       <mat-chip>
         <img

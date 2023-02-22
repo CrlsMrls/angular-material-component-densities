@@ -8,7 +8,7 @@ This application is available at: https://angular-material-density.netlify.app
 
 ## Development and build
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
 
 ### Development server
 
@@ -22,7 +22,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ### 1. Compilation error for low density values
 
-Currently (**@angular/material v15.1.4**), the compiler does not allow to set the density globally for values smaller than **-2**.
+Currently (**@angular/material v15.1.5**), the compiler does not allow to set the density globally for values smaller than **-2**.
 
 The code:
 

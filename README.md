@@ -22,7 +22,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ### 1. Compilation error for low density values
 
-Currently (**@angular/material v15.1.5**), the compiler does not allow to set the density globally for values smaller than **-2**.
+Currently (**@angular/material v15.2.0**), the compiler does not allow to set the density globally for values smaller than **-2**.
 
 The code:
 

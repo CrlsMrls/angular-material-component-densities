@@ -11,33 +11,8 @@
     <a href="https://github.com/angular/components/issues/26613"
       >GitHub issue 26613</a
     >
+    - <strong>Resolved!</strong>
   </p>
-  <p>
-    Currently (<em>@angular/material v15.2.0</em>), the compiler throws the
-    following error when setting density globally "<em
-      >@include mat.all-component-densities(-3);</em
-    >"
-  </p>
-  <pre>
-      Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
-      SassError: "mdc-density: height must be between 24px and 32px (inclusive), but received 20px."
-      ╷
-      632 │     $height: density.prop-value(
-  </pre>
-  <p>
-    This should be possible based on
-    <a
-      href="https://m3.material.io/foundations/layout/understanding-layout/spacing#da94f612-f274-49ab-aec5-f03dab53be8e"
-    >
-      Material documentation about Density scale:</a
-    >
-    <em
-      >"The density scale is numbered, starting at 0 for a component’s default
-      density. The scale moves to negative numbers
-      <strong>(-1, -2, -3)</strong> as space decreases,..."</em
-    >
-  </p>
-  <p>The <em>mat-chips</em> implementation produces this error.</p>
 </section>
 <section>
   <h2>Problem #2 mat-label disappears when density < -1</h2>

@@ -19,6 +19,7 @@ import { SliderExampleComponent } from './slider/slider-example.component';
 import { CommonModule } from '@angular/common';
 import { ChipsInputExampleComponent } from './chips-input/chips-input-example.component';
 import { TableExampleComponent } from './table/table-example.component';
+import { SelectExampleComponent } from './select/select-example.component';
 
 @Component({
   selector: 'material-list',
@@ -36,6 +37,7 @@ import { TableExampleComponent } from './table/table-example.component';
     DatepickerExampleComponent,
     DialogExampleComponent,
     CheckboxExample,
+    SelectExampleComponent,
     SlideToggleExampleComponent,
     BadgeExampleComponent,
     SliderExampleComponent,

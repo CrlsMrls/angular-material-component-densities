@@ -20,6 +20,7 @@ import { CommonModule } from '@angular/common';
 import { ChipsInputExampleComponent } from './chips-input/chips-input-example.component';
 import { TableExampleComponent } from './table/table-example.component';
 import { SelectExampleComponent } from './select/select-example.component';
+import { ListOptionsExampleComponent } from './list-options/list-options-example.component';
 
 @Component({
   selector: 'material-list',
@@ -30,6 +31,7 @@ import { SelectExampleComponent } from './select/select-example.component';
     InputExampleComponent,
     TreeNestedOverviewExample,
     ListExampleComponent,
+    ListOptionsExampleComponent,
     ChipsExampleComponent,
     ChipsInputExampleComponent,
     StepperExampleComponent,

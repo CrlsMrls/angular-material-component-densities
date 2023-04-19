@@ -45,6 +45,9 @@ $my-theme: mat.define-light-theme($app-theme-config);
   @include mat.all-component-densities(-3);
 }
 
+.density-minimum-section {
+  @include mat.all-component-densities(minimum);
+}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

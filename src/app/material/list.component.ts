@@ -8,6 +8,7 @@ import { InputExampleComponent } from './input/input-example.component';
 import { ListExampleComponent } from './list/list-example.component';
 import { ChipsExampleComponent } from './chips/chips-example.component';
 import { StepperExampleComponent } from './stepper/stepper-example.component';
+import { VerticalStepperExampleComponent } from './stepper/vertical-stepper-example.component';
 import { ExpansionPanelExampleComponent } from './expansion-panel/expansion-panel-example.component';
 import { DatepickerExampleComponent } from './datepicker/datepicker-example.component';
 import { DialogExampleComponent } from './dialog/dialog-example.component';
@@ -35,6 +36,7 @@ import { ListOptionsExampleComponent } from './list-options/list-options-example
     ChipsExampleComponent,
     ChipsInputExampleComponent,
     StepperExampleComponent,
+    VerticalStepperExampleComponent,
     ExpansionPanelExampleComponent,
     DatepickerExampleComponent,
     DialogExampleComponent,

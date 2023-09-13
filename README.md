@@ -1,6 +1,6 @@
 # MaterialComponents
 
-This Angular application shows how the density theming configuration affects the [Angular Material components](https://material.angular.io/).
+This Angular application (`@angular/material@"16.2.4"` and `@angular/core@16.2.5`) shows how the density theming configuration affects the [Angular Material components](https://material.angular.io/).
 
 The goal of this repository is to analyze how to approach the different density options for Angular material, and highlight two problems with the latest version.
 
